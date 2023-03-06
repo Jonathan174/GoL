@@ -204,9 +204,14 @@ ON = 255
 OFF = 0
 vals = [ON, OFF]
 
+
+print("SELECT THE ID FOR THE CASE TO GAME (2 DIGITS):")
+id = input()
+if len(id)<2:
+    id = "0"+id
 #relative url for the txt HERE CHANGES DE NAME FILE
-inputFile = 'Cases\input01.txt' 
-outputFile = 'Results\output01.txt'
+inputFile = 'Cases\input'+id+'.txt' 
+outputFile = 'Results\output'+id+'.txt'
 date = datetime.today().strftime('%Y-%m-%d, %H:%M:%S')
 
 
